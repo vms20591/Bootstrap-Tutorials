@@ -1,0 +1,163 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Bootstrap SignUp Form</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	</head>
+	<body>
+		<div class="container">
+			<div class="page-header">
+				<h1 class="text-left">Bootstrap Tutorial <small>one place to learn them all</small></h1>
+			</div>
+			<div class="row">
+				<h3 class="text-center">Bootstrap Signup Form</h2>
+				<br/>
+				<div class="col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+					<form class="form-horizontal">
+						<fieldset>
+							<!-- User's Name -->
+							<div class="form-group">
+								<label class="control-label col-xs-4" for="username">Name</label>
+								<div class="col-xs-6">
+									<input type="text" class="form-control" name="username" placeholder="Username" id="username" />								
+								</div>
+							</div>
+							
+							<!-- User's Date of Birth -->
+							<div class="form-group">
+								<label class="control-label col-xs-4" for="date_of_birth">Date of Birth</label>
+								<div class="col-xs-6">
+									<div class="row">
+										<!-- Day of birth -->
+										<div class="col-xs-4">
+											<select name="date_of_birth" id="date_of_birth" class="form-control">
+												<option value="default">Day</option>
+											</select>
+										</div>
+										<!-- Month of birth -->
+										<div class="col-xs-4">
+											<select name="month_of_birth" id="month_of_birth" class="form-control">
+												<option value="default">Month</option>
+											</select>
+										</div>
+										<!-- Year of birth -->
+										<div class="col-xs-4">
+											<select name="year_of_birth" id="year_of_birth" class="form-control">
+												<option value="default">Year</option>
+											</select>
+										</div>
+									</div>
+								</div>
+							</div>
+							
+							<!-- User's Gender -->
+							<div class="form-group">
+								<label class="control-label col-xs-4" for="gender">Gender</label>
+								<div class="col-xs-2">
+									<label class="radio-inline">
+										<input type="radio" name="gender" value="male" id="male_gender">Male
+									</label>
+								</div>
+								<div class="col-xs-2">
+									<label class="radio-inline">
+										<input type="radio" name="gender" value="female" id="female_gender">Female
+									</label>
+								</div>								
+							</div>
+							
+							<!-- User's Email -->
+							<div class="form-group">
+								<label class="control-label col-xs-4" for="email_username">Email</label>
+								<div class="col-xs-6">
+									<input type="text" class="form-control" name="email_username" placeholder="Email" id="email_username" />
+								</div>
+							</div>
+							
+							<!-- User's Phone Number -->
+							<div class="form-group">
+								<label class="control-label col-xs-4" for="phone_number">Phone Number</label>
+								<div class="col-xs-6">
+									<input type="text" class="form-control" name="phone_number" placeholder="Phone Number" id="phone_number" />
+								</div>
+							</div>
+							
+							<!-- User's Address -->
+							<div class="form-group">
+								<label class="control-label col-xs-4" for="address">Address</label>
+								<div class="col-xs-6">
+									<textarea rows="3" cols="10" class="form-control" name="address" placeholder="Address" id="address"></textarea>
+								</div>
+							</div>							
+							
+							<!-- User's City -->
+							<div class="form-group">
+								<label class="control-label col-xs-4" for="city">City</label>
+								<div class="col-xs-6">
+									<select name="city" class="form-control" id="city">
+										<option value="default">Select City</option>
+									</select>
+								</div>
+							</div>
+							
+							<!-- User's State -->
+							<div class="form-group">
+								<label class="control-label col-xs-4" for="state">State</label>
+								<div class="col-xs-6">
+									<select name="state" class="form-control" id="state">
+										<option value="default">Select State</option>
+									</select>
+								</div>
+							</div>
+							
+							<!-- User's Postal Code -->
+							<div class="form-group">
+								<label class="control-label col-xs-4" for="postal_code">Postal Code</label>
+								<div class="col-xs-6">
+									<input type="text" class="form-control" name="postal_code" placeholder="Postal Code" id="postal_code" />
+								</div>
+							</div>
+							
+							<!-- User's Subscription to alerts -->
+							<div class="form-group">
+								<div class="col-xs-offset-4 col-xs-4">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="subscription" value="yes" id="subscription" />
+											Subscribe to our alerts?
+										</label>	
+									</div>									
+								</div>
+							</div>
+							
+							<!-- User's terms & condition -->
+							<div class="form-group">
+								<div class="col-xs-offset-4 col-xs-8">
+									<div class="checkbox">
+										<label>
+											<input type="checkbox" name="terms_conditions" value="yes" id="terms_conditions" />
+											I Agree to the <a href="#">Terms & Conditions</a>
+										</label>	
+									</div>									
+								</div>
+							</div>
+							<br/>
+							<!-- SignUp Button -->
+							<div class="form-group">
+								<div class="col-xs-offset-4">
+									<input type="submit" class="btn btn-primary" value="Sign Up"/>
+									<input type="reset" class="btn btn-primary" value="Reset"/>	
+								</div>
+							</div>
+						</fieldset>
+					</form>
+				</div>
+			</div>
+		</div>
+		<script type="text/javascript" charset="utf-8" src="jquery-1.11.3.js"></script>		
+		<script type="text/javascript" charset="utf-8" src="bootstrap.min.js"></script>
+	</body>
+</html>
+
+
